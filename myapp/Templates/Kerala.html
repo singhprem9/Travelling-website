@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    img{
+        width:480px;
+        height: 470px;
+        border: 2px solid;
+    }
+
+    .Card-title,h1{
+        align-items: center;
+        position: absolute;
+        margin-top: 185px;
+        margin-left: 405px;
+        color: white;
+    }
+    .Card-title:hover{
+        color: orange;
+    }
+    .text{
+        position: absolute;
+        color: white;
+        font-size: 22px;
+        font-style: normal;
+        align-items: center;
+        margin-top: 235px;
+        margin-left: 522px;
+    }
+    .text:hover{
+        color: orange;
+    }
+
+    .icons{
+        text-align: center;
+        margin-top: -35px;
+      }
+      .icons a{
+        text-decoration: none;
+        color: #fff;
+      }
+      
+      .icons ion-icon{
+        color: dimgray;
+        font-size: 30px;
+        padding-left: 14px;
+        padding-top: 5px;
+        transition: 0.3s ease;
+        
+      }
+      
+      .icons ion-icon:hover{
+        color: #ff7200;
+      }
+</style>
+ {% load static %}
+ {% csrf_token %}
+<div class="container-fluid">
+    <div class="card bg-dark text-white">
+        <img src="static/Images//kerala2.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h3 class="Card-title">Kerala Archives - Magic Safari</h3>
+            <a class="text" href="/">Home ⇒ Trips ⇒ Kerala</a>
+        </div>
+    </div>
+</div>
+
+<!-- title -->
+<div style="font-size: 28px; font-weight: bold;margin-top: 80px; margin-left: 50px">Destination: Kerala</div>
+<div style="font-size: 17px; font-weight: lighter; margin-left: 50px">Amritsar is a city in the northwestern Indian state of Punjab, 28 kilometers from the border with Pakistan. At the center of its walled old town, the gilded Golden Temple (Harmandir Sahib) is the holiest gurdwara (religious complex) of the Sikh religion. It’s at the end of a causeway, surrounded by the sacred Amrit Sarovar tank (lake), where pilgrims bathe.</div>
+  
+
+<!-- Popular Sides -->
+<!-- Adding Related Activities -->
+<div style="margin-top: 25px;font-weight: bold; font-style:arial;font-size:38px; margin-left: 49px;">Popular Destinations</div>
+
+<div style="margin-top: 25px;">
+  <div class="card-group">
+    <div class="card">
+      <img src="static/Images//kulu.jpg" style="height: 300px; width: 410px" class="card-img-top img-thumbnail" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+        <div style="font-size: 20px; font-weight:bold; text-align:center; margin-top: 100px">Kulu Manali</div>
+        <div style="margin-left: 93px; margin-top: 25px"><button class="cn"><a href="/hp">View More</a></button></div>
+      </div>
+      <div class="card-footer">
+        <div class="text-muted"></div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="static/Images//jk1.jpg" style="height: 300px; width: 410px" class="card-img-top img-thumbnail" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+        <div style="font-size: 20px; font-weight:bold; text-align:center;margin-top: 90px">Jammu & Kashmir</div>
+        <div style="margin-left: 93px; margin-top: 25px"><button class="cn"><a href="/Kashmir">View More</a></button></div>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"></small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="static/Images//Rishikesh.jpg" style="height: 300px; width: 410px" class="card-img-top img-thumbnail" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+        <div style="font-size: 20px; font-weight:bold; text-align:center;margin-top: 90px">Rishikesh Uttrakhand</div>
+        <div style="margin-left: 93px; margin-top: 25px"><button class="cn"><a href="/Uk">View More</a></button></div>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"></small>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Adding Why us -->
+<div
+      style="font-weight: bold; font-size: 22px; font-style: Times New Roman; margin-left: 30px; margin-top: 16px; margin-bottom: 25px;">
+      Why Us </div>
+  </div>
+  <div style="background-color:aliceblue" class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        We are a leading player in the travel & tourism industry across India, Magic Safari offers great offers, some of
+        the lowest travel packages, exclusive discounts, and a seamless online booking experience. Hotel and holiday
+        bookings through the desktop or mobile site are a delightfully customer-friendly experience, and with just a few
+        clicks you can complete your booking. With features like Instant Discounts, Calendar, MyRewards Program,
+        MyWallet, and many more, the overall booking experience with magic safari constantly adds value to its product
+        and continues to offer the best to its customers.
+      </div>
+      <div class="col-sm-4">
+        50 Most romantic and best Honeymoon Destinations In India Best Honeymoon Destinations In India Most romantic Honeymoon Destinations
+      </div>
+      <div class="col-sm-4">
+        <div style="font-weight: bolder; font-size: 22px;">Reach us</div>
+        <div> Magic Safari</div> Travel Planners & Event Management Company <div>Faridabad</div>121002 <br>
+        <div style="font-weight: lighter; font-style:bold; font-size: 22px;">Prem Singh</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="text-align: center; margin-bottom: 35px; margin-top: 35px; font-weight: bold;">Follow Us</div>
+  <div class="icons">
+    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+</div>
+</div>
+</form>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+{% endblock %}

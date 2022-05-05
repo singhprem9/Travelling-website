@@ -1,0 +1,780 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        width: 480px;
+        height: 470px;
+        border: 2px solid;
+    }
+
+    .Card-title,
+    h1 {
+        align-items: center;
+        position: absolute;
+        margin-top: 135px;
+        margin-left: 375px;
+        color: white;
+        font-size: 32px;
+    }
+
+    .Card-title:hover {
+        color: orange;
+    }
+
+    .text {
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        font-style: normal;
+        align-items: center;
+        margin-top: 185px;
+        margin-left: 419px;
+    }
+
+    .text:hover {
+        color: orange;
+    }
+
+    .destiny {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        margin-top: 40px;
+        margin-left: 50px;
+        font-style: normal;
+        color: black;
+        font-weight: bold;
+
+    }
+
+    h6 {
+        color: black;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .package {
+        margin-top: 40px;
+        margin-left: 50px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .card-title {
+        position: absolute;
+        align-items: center;
+        margin-block-start: auto;
+        margin-left: 778px;
+        margin-top: -472px;
+        color: black;
+        font-size: 27px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        display: contents;
+        overflow: hidden;
+    }
+
+    .card-body,
+    h3 {
+        margin-left: 90px;
+        font-size: 40px;
+        color: dimgray;
+    }
+
+    .pack {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: normal;
+        font-size: 28px;
+        margin-top: -455px;
+        margin-left: 660px;
+        font-weight: bold;
+
+    }
+
+    .k {
+        font-family: sans-serif;
+        font-size: 16px;
+        color: black;
+        font-weight: normal;
+        margin-left: 90px;
+        display: flex;
+    }
+
+    .mr {
+        margin-left: 105px;
+        font-size: 30px;
+        color: black;
+        margin-top: -15px;
+        font-weight: bold;
+
+    }
+
+    .mrp-1 {
+        margin-left: 195px;
+        font-size: 24px;
+        color: rgb(172, 41, 128);
+        margin-top: -37px;
+    }
+
+    .str {
+        margin-left: 435px;
+        font-size: 20px;
+        color: dimgray;
+        margin-top: -35px;
+    }
+
+    .container {
+        width: 400px;
+        height: 350px;
+        padding: 50px;
+        margin: 20px;
+    }
+
+    .trip {
+        position: absolute;
+        margin-left: 617px;
+        margin-top: -415px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: -278px;
+    }
+
+    .act {
+        position: absolute;
+        margin-left: 940px;
+        margin-top: -415px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: -675px;
+    }
+
+    .btn {
+        position: absolute;
+        margin-left: 709px;
+        margin-top: -145px;
+        margin-right: -596px;
+        margin-bottom: 108px;
+        border: 3px solid white;
+    }
+
+    .btn {
+        color: orange;
+    }
+
+    .btn-1 {
+        position: absolute;
+        margin-left: 860px;
+        margin-top: -135px;
+        margin-right: -388px;
+        margin-bottom: 108px;
+    }
+
+    .cn {
+        width: 115px;
+        height: 35px;
+        background: #ff7200;
+        border: none;
+        margin-bottom: -60px;
+        margin-left: 750px;
+        margin-top: -220px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+        position: absolute;
+    }
+
+    .cn:hover {
+        color: green;
+    }
+
+    .an {
+        width: 115px;
+        height: 35px;
+        border: none;
+        margin-bottom: -60px;
+        margin-left: 868px;
+        margin-top: -220px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+        position: absolute;
+    }
+
+    .an:hover {
+        color: aliceblue;
+    }
+
+    footer {
+        margin-top: 12px;
+    }
+
+    .R-1 {
+        margin-top: 15px;
+    }
+
+    .A {
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 350px;
+    }
+
+    .A1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: -30px;
+        font-size: 28px;
+        margin-left: 180px;
+        color: initial;
+    }
+
+    .A-2 {
+        font-size: 22px;
+        font-weight: lighter;
+        margin-top: 8px;
+        font-size: 15px;
+        margin-left: 305px;
+        color: dimgray;
+    }
+
+    .Title {
+        color: black;
+        font-size: 28px;
+        font-weight: bold;
+        margin-left: -80px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .JK {
+        font-size: 18px;
+        color: black;
+        border: 4px solid gray;
+        border-radius: 60px;
+        margin-right: 75px;
+        text-align: center;
+        background-color: lavender;
+        margin-left: -10px;
+        margin-top: -5px;
+    }
+
+    .sv {
+        font-size: 15px;
+        color: black;
+    }
+
+    .txt {
+        font-size: 15px;
+        margin-left: -87px;
+        margin-top: 38px;
+        margin-right: 50px;
+    }
+
+    .Txt {
+        font-size: 15px;
+        margin-left: 12px;
+        margin-top: 20px;
+        color: gray;
+        margin-right: 42px;
+        margin-bottom: 15px;
+    }
+
+    .SF {
+        margin-left: 28px;
+        font-weight: lighter;
+        margin-top: 26px;
+    }
+
+    .sf1 {
+        margin-left: 28px;
+    }
+
+    .inc {
+        margin-left: 210px;
+        margin-top: -103px;
+    }
+
+    .Footer {
+        margin-left: 95px;
+        margin-right: 1px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+    }
+
+    .Footer2 {
+        margin-left: 100px;
+        margin-right: 10px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    .f-1 {
+        margin-top: 3px;
+        font-size: 15px;
+        margin-left: -70px;
+        margin-top: 30px;
+        color: black;
+    }
+
+    .in-1 {
+        margin-top: -100px;
+        font-size: 15px;
+        margin-left: 125px;
+        margin-right: 0px;
+        color: black;
+    }
+
+    .f-2 {
+        margin-top: 3px;
+        font-size: 15px;
+        margin-left: -70px;
+        margin-top: 42px;
+        color: black;
+    }
+
+    .in-2 {
+        margin-top: -69px;
+        font-size: 14px;
+        margin-left: 132px;
+        margin-right: 75px;
+        color: black;
+    }
+
+    .card-footer-1 {
+        position: absolute;
+        margin-top: 678px;
+        margin-left: 975px;
+        margin-right: 150px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: -323px;
+        border-radius: 15px;
+        background-size: 4px solid;
+    }
+
+    .btn-11 {
+        align-items: center;
+    }
+
+    .box {
+        border: 25px;
+        margin-top: 324px;
+        border-radius: 3px;
+        align-items: center;
+        border: 0px solid;
+        margin-right: 450px;
+        margin-left: 456px;
+        color: black;
+        background-color: black;
+        border-radius: 15px;
+    }
+
+    .box-2 {
+        border-radius: 32px;
+        border: 4px solid cadetblue;
+        background-color: antiquewhite;
+        font-size: 15px;
+        margin-left: 75px;
+        margin-right: 95px;
+        align-items: inherit;
+        font-weight: normal;
+        margin-top: 8px;
+        font-size: 15px;
+        padding: 12px;
+        padding-top: 12px;
+        padding-left: 12px;
+        padding-left: 5px;
+        padding-right: -1px;
+        padding-top: 20px;
+        padding-bottom: -30px;
+    }
+
+    .icons{
+        text-align: center;
+        margin-top: -35px;
+      }
+      .icons a{
+        text-decoration: none;
+        color: #fff;
+      }
+      
+      .icons ion-icon{
+        color: dimgray;
+        font-size: 30px;
+        padding-left: 14px;
+        padding-top: 5px;
+        transition: 0.3s ease;
+        
+      }
+      
+      .icons ion-icon:hover{
+        color: #ff7200;
+      }
+</style>
+{% csrf_token %}
+<div class="container-fluid mx-auto">
+    <div class="card bg-dark text-white">
+        <img src="static/Images//K5.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h3 class="Card-title">Kashmir Archives - Magic Safari</h3>
+            <a class="text" href="/Book">Home ⇒ Trips ⇒ Kashmir Winter Package</a>
+        </div>
+    </div>
+</div>
+
+<div class="destiny">
+    Destination: Jammu & Kashmir
+    <h6>Jammu & Kashmir – Jammu and Kashmir was a region formerly administered by India as a state from 1954 to 2019,
+        constituting the southern and southeastern <br> portion of the larger Kashmir region, which has been the subject
+        of a
+        dispute between India, Pakistan, and China since the mid-20th century.</h6>
+</div>
+
+<div class="package mx-4">
+    <div class="card mt-2 col-md-6 col-lg-4" style="width: 43rem;">
+        <img src="/static/Images/K5.jpg" class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+            <h3 class="card-title"> </h3>
+            <p class="card-text"></p>
+        </div>
+        <div class="container">
+            <ul>
+                <div class="trip">
+                    <li class="list-group-item">Trip Type</li><a href="/Kashmir">Family,Hill Station</a>
+                    <li class="list-group-item">
+                        <footer>Activities</footer>
+                    </li><a href="/Kashmir">Horseback Riding,Skiing + Snowboarding</a>
+                </div>
+                <div class="act">
+                    <li class="list-group-item">Locations</li><a href="/Kashmir">Jammu & Kashmir</a>
+            </ul>
+            <button type="submit" class="cn btn-success"> <a href="/Book">Book Now</a></button>
+            <button type="submit" class="an  active"> <a style="text-decoration: none; background-color:#f2f2f2;color:black; margin-left:6px" href="/Contact">?Trip Enquiry</a></button>
+        </div>
+    </div>
+</div>
+<div class="pack">
+    <h3>Kashmir Winter Package</h3>
+    <div class="mr">From</div>
+    <div class="mrp-1">₹12,000.00</div>
+    <div class="str">★★★★★</div>
+
+    <div class="k">
+        Winter Package In Kashmir 04 Nights & 05 Days The tropical climate of India makes it the best destination to
+        be
+        explored in……
+    </div>
+</div>
+</div>
+
+<div class="A">
+</div>
+<div class="A1">
+    Explore Kashmir like never before. visit places that are less explored.
+</div>
+<div class="A-2">
+    With support from our ground team explore all the virgin places of kashmir like dodpathri,Aharbal water falls,
+    <br>
+    <div style="margin-left: 106px">Peer ki gali brapart from visiting the most famous places of kashmir like</div>
+    <br>
+    <div style="margin-top: -22px; margin-left: 190px; margin-right: 88px; font-size: 15px"> Gulmarg, Pahalgam, Sonamarg
+        and Srinagar</div> <br>
+</div>
+<div class="conatiner-fluid mx-auto">
+    <div class="card-group mx-auto">
+        <div class="card mx-auto">
+            <img src="/static/Images/jktulip.jpg" style="height: 300px; width: 410px" class="card-img-top img-thumbnail" alt="...">
+            <div style="background-color: #f2f2f2;">
+                <div class="card-body">
+                    <div class="JK">Tulip festival</div>
+                    <h5 class="Title">Kashmir Tulip Package</h5>
+                    <div class="sv">7 Days-Summer Vacation</div>
+                </div>
+                <div class="Txt">
+                    With start of tulip festival spring season announces its arrival in kashmir. Lush green meadows and
+                    gushing rivers are a common sight.
+                </div>
+                <div class="SF">
+                    STARTS FROM <br>
+                    ₹ 11,900.0
+                </div>
+                <div class="sf1">
+                    per person on twin <br>
+                    sharing (6 pax)
+                </div>
+
+                <div class="inc">
+                    INCLUSIONS <br>
+                    Meals <br>
+                    Hotels <br>
+                    Sightseeing
+                </div>
+                <br>
+                <div class="Footer" >
+                    <button type="submit"  class="btn-Secondary btn-xm-2 active "><a style="text-decoration: none;background-color:rgba(255, 228, 196, 0.517);color:black" href="/Contact">ENQUIRE
+                            NOW</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mx-auto ">
+            <img src="/static/Images/jk3.jpg" style="height: 300px; width: 410px" class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+                <div class="JK">Weekend Getaway</div>
+                <h5 class="Title">Kashmir Family Tour</h5>
+                <div class="sv">7 Days-Summer Vacation</div>
+                <div class="txt">
+                    Visit Gulmarg, Pahalgam and Srinagar.Stay at Houseboat in Dal lake. Enjoy Shikara ride in Srinagar.
+                </div>
+
+                <div class="f-1">
+                    <br>
+                    STARTS FROM <br>
+                    ₹ 9,999.0 <br>
+                    per person on twin <br>
+                    sharing (6 pax)
+                </div>
+                <div class="in-1">
+                    INCLUSIONS <br>
+                    Meals <br>
+                    Hotels <br>
+                    Sightseeing
+                </div>
+            </div>
+            <div class="Footer2">
+                <button type="submit" class="btn-light btn-xm-2 active"><a style="text-decoration: none;background-color:rgba(255, 228, 196, 0.517);color:black" href="/Contact">ENQUIRE NOW</a></button>
+            </div>
+        </div>
+        <div class="card mx-12 ">
+
+            <img src="/static/Images/jk6.jpg" style="height: 300px; width: 410px" class="card-img-top img-thumbnail" alt="3rem">
+            <div style="background-color: #f2f2f2;">
+                <div class="card-body">
+                    <div class="JK">Honeymoon Special</div>
+                    <h5 class="Title">Kashmir Honeymoon Trip</h5>
+                    <div class="sv">6 Days-Summer Vacation</div>
+                    <div class="txt">
+                        Room decoration in Houseboat, Candle lit dinner at Dal lake and 2 nights stay at Gulmarg
+                    </div>
+                    <div class="f-2">
+                        STARTS FROM <br>
+                        ₹ 24,999.0 <br>
+                        per person on twin <br>
+                        sharing (6 pax)
+                    </div>
+                    <div class="in-2">
+                        INCLUSIONS <br>
+                        Meals <br>
+                        Hotels <br>
+                        Sightseeing
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer-1">
+            <div style="margin-top: -20px;" class="text-muted">
+                <button type="submit" class="btn-Secondary active"><a style="text-decoration: none;background-color:rgba(255, 228, 196, 0.517);color:black; margin-top:24px" href="/Contact">ENQUIRE NOW</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="Jm mx-auto">
+    <div class="A">
+    </div>
+    <div class="conatiner-fluid mx-auto">
+        <div class="card-group mx-auto">
+            <div class="card mx-auto">
+                <img src="/static/Images/vd.jpg" style="height: 300px; width: 410px"class="card-img-top img-thumbnail" alt="...">
+                <div class="card-body">
+                    <div class="JK">Vaishno Devi Darshan</div>
+                    <h5 class="Title">Vaishno Devi Kashmir Tour</h5>
+                    <div class="sv">7 day-Katra kashmir Tour</div>
+                </div>
+                <div class="Txt">
+                    Darshan at Mata Vaishnodevi temple in Katra and 5 days tour of kashmir valley.
+                </div>
+                <div class="SF">
+                    STARTS FROM <br>
+                    ₹ 11,900.0
+                </div>
+                <div class="sf1">
+                    per person on twin <br>
+                    sharing (6 pax)
+                </div>
+
+                <div class="inc">
+                    INCLUSIONS <br>
+                    Meals <br>
+                    Hotels <br>
+                    Sightseeing
+                </div>
+                <br>
+                <div class="Footer">
+                    <button type="submit" class="btn-Secondary btn-xm-2 active"><a style="text-decoration: none;background-color:rgba(255, 228, 196, 0.517);color:black" href="/Contact">ENQUIRE
+                            NOW</a></button>
+                </div>
+            </div>
+            <div class="card mx-auto ">
+                <img src="/static/Images/jkr.jpg"  style="height: 300px; width: 410px" class="card-img-top img-thumbnail" alt="...">
+                <div style="background-color: #f2f2f2;">
+                    <div class="card-body">
+                        <div class="JK">Camping by River side</div>
+                        <h5 class="Title">Kashmir Summer Holidays</h5>
+                        <div class="sv">7 Days-May/June Trip</div>
+                        <div class="txt">
+                            Stay at River side camp in sonamarg. Visit Dodpathri and yusmarg. Stay at Gulmarg and
+                            Pahalgam
+                        </div>
+
+                        <div class="f-1">
+                            <br>
+                            STARTS FROM <br>
+                            ₹ 9,999.0 <br>
+                            per person on twin <br>
+                            sharing (6 pax)
+                        </div>
+                        <div class="in-1">
+                            INCLUSIONS <br>
+                            Meals <br>
+                            Hotels <br>
+                            Sightseeing
+                        </div>
+                    </div>
+                    <div class="Footer2">
+                        <button type="submit" class="btn-Secondary btn-xm-2 active"><a style="text-decoration: none;background-color:rgba(255, 228, 196, 0.517);color:black;" href="/Contact">ENQUIRE
+                                NOW</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card mx-12 ">
+                <img src="/static/Images/sk.jpg" style="height: 300px; width: 410px"class="card-img-top img-thumbnail" alt="3rem">
+                <div class="card-body">
+                    <div class="JK">Jashne-Bahar</div>
+                    <h5 class="Title">Kashmir Spring festival</h5>
+                    <div class="sv">6 Days March/April</div>
+                    <div class="txt">
+                        With start of tulip festival spring season announces its arrival in kashmir. Lush green meadows
+                        and gushing rivers are a common sight.
+                    </div>
+                    <div class="f-2">
+                        STARTS FROM <br>
+                        ₹ 24,999.0 <br>
+                        per person on twin <br>
+                        sharing (6 pax)
+                    </div>
+                    <div class="in-2">
+                        INCLUSIONS <br>
+                        Meals <br>
+                        Hotels <br>
+                        Sightseeing
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer-1">
+                <div class="text-muted">
+                    <button type="submit" class="btn-Secondary btn-xm-2 " ><a style="text-decoration: none;background-color:rgba(255, 228, 196, 0.517);color:black" href="/Contact">ENQUIRE
+                            NOW</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="box">
+    <h2>Places to see in Kashmir</h2>
+</div>
+<div class="box-2">
+    <div style="margin-left: 30px; margin-right: 30px; margin-top: 10px; margin-bottom: 14px">
+        <b>1. Srinagar:</b>Srinagar, the capital of Kashmir valley is famously known for its world renowned Dal
+        lake,Nigeen
+        lake,Mughal gardens, Tulip garden, Dachigam national park among manyother heritage and scenic places.
+        Accommodation
+        of all star categories including world famous brands like Sheraton, Taj group, Radisson among other local
+        heritage
+        brand like Ahad group of hotels are available in srinagar. Houseboat stay at dal lake is common feature of all
+        the
+        "Tour packages of kashmir".
+        <br>
+        <br>
+        <b> 2.Gulmarg: </b>Asia's best ski resort is a promise of scenery, beauty, landscapes, mountains, forest,
+        Gondola,
+        Skiing.
+        One should stop by at Tangmarg before finally moving to gulmarg to feed your cameras with unmatched beauty. Zig
+        point also offers uninterrupted view of north kashmir. Another famous place in the vicinity of Gulmarg is Baba
+        Rishi
+        and Shrunz fall. Kongdori, affarwat, Strawberry valley are most visited points in "Gulmarg tour". "kashmir
+        Holiday"
+        is incomplete without a night stay in Gulmarg.
+        <br>
+        <br>
+        <b>3.Pahalgam:</b> Pahalgam is a hill station in Jammu and Kashmir. Aru Wildlife is home to animals including
+        brown
+        bears
+        and musk deer. Northeast, the Lidder River runs through scenic Betaab Valley. Southeast, Tulian Lake is flanked
+        by
+        mountain peaks and often frozen. Premium 4 star and 3 star hotels are available for all Tourists in Pahalgam.
+        <br>
+        <br>
+        <b>4.Sonamarg:</b>A hill station in the Gaderbal district of Jammu and kashmir often called as gateway to ladakh
+        is
+        a meadow of Gold. The road that leads to sonamarg runs parallel to River Sindh with snow clad mountains in the
+        backdrop one literally feels close to heaven. Thajwas glacier and zojila pass are the two major sightseeing
+        attraction for the tourists.
+        <br>
+        <br>
+        <h5 style="text-align:center; font-weight:bold; font-size:30px">Best season to visit kashmir</h5>
+        <br>
+        <b>Spring season( March 15th to May 15th) :</b>Best time to visit Kashmir if you love flowers. Tulip garden,
+        Badamwari,snow clad mountains, Cool breeze and charming weather are specialties of spring season.
+        <br>
+        <br>
+        <b>Summer season ( May 15th to August 31st) :</b>Best time to visit Kashmir if you love camping by river side,
+        warm
+        temperatures and trekking to glaciers.
+        <br>
+        <br>
+        <b>Autumn season:( 01st September to November 15th ) :</b>The season of fall, also know as harvest season, one
+        can
+        see Red apples in apple garden, enjoy the local organic produce like Walnut, almonds and much more.
+        <br>
+        <br>
+        <b>Winter season:( 15th November to 15th march ) :</b>Skiing in Gulmarg, Heli skiing in Gulmarg, Romantic trips,
+        Cold weather, snow, snowflakes etc. are some common features of winter in Kashmir.
+    </div>
+</div>
+<!-- Adding follow -->
+<div style="text-align: center; margin-bottom: 35px; margin-top: 35px; font-weight: bold;">Follow Us</div>
+<div class="icons">
+    <a href="#">
+        <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+    <a href="#">
+        <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+    <a href="#">
+        <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+    <a href="#">
+        <ion-icon name="logo-skype"></ion-icon>
+    </a>
+    <a href="#">
+        <ion-icon name="logo-google"></ion-icon>
+    </a>
+</div>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+{% endblock %}

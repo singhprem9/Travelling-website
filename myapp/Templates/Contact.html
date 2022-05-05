@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% block contactactive %} active {% endblock%}
+{% block content %}
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .icons {
+        text-align: center;
+        margin-top: -35px;
+    }
+
+    .icons a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .icons ion-icon {
+        color: dimgray;
+        font-size: 30px;
+        padding-left: 14px;
+        padding-top: 5px;
+        transition: 0.3s ease;
+
+    }
+
+    .icons ion-icon:hover {
+        color: #ff7200;
+    }
+
+    
+      
+      /* Style inputs */
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=email], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type=submit] {
+        background-color:darkcyan;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: indianred;
+      }
+      
+      /* Style the container/contact section */
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
+      
+      /* Create two columns that float next to eachother */
+      .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+
+</style>
+<form action="/Contact" method="POST">
+{% csrf_token %}
+<div class="container-fluid mx-auto">
+    <div class="card">
+        <img src="static/Images//cu.jpg" class="card-img" alt="...">
+    </div>
+</div>
+<!-- Adding contact page -->
+          
+<div class="container">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>Swing by for a cup of coffee, or leave us a message:</p>
+                    {{n}}
+    </div>
+    <div class="row">
+                
+      <div style="margin-left: 280px" class="column">
+        
+  
+          
+          <label for="fname">First Name</label>
+          <input required type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input required type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="email">Email-id</label>
+          <input required type="email" id="email" name="email" placeholder="example123@gmail.com">
+          <label for="subject">Message</label>
+          <textarea required id="subject" name="message" placeholder="Write something.." style="height:120px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Adding Footer part -->
+<div
+      style="font-weight: bold; font-size: 22px; font-style: Times New Roman; margin-left: 30px; margin-top: 16px; margin-bottom: 25px;">
+      Why Us </div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            We are a leading player in the travel & tourism industry across India, Magic Safari offers great offers,
+            some of
+            the lowest travel packages, exclusive discounts, and a seamless online booking experience. Hotel and holiday
+            bookings through the desktop or mobile site are a delightfully customer-friendly experience, and with just a
+            few
+            clicks you can complete your booking. With features like Instant Discounts, Calendar, MyRewards Program,
+            MyWallet, and many more, the overall booking experience with magic safari constantly adds value to its
+            product
+            and continues to offer the best to its customers.
+        </div>
+        <div class="col-sm-4">
+            50 Most romantic and best Honeymoon Destinations In India Best Honeymoon Destinations In India Most romantic
+            Honeymoon Destinations
+        </div>
+        <div class="col-sm-4">
+            <div style="font-weight: bolder; font-size: 22px;">Reach us</div>
+            <div> Magic Safari</div> Travel Planners & Event Management Company <div>Faridabad</div>121002 <br>
+            <div style="font-weight: lighter; font-style:bold; font-size: 22px;">Prem Singh</div>
+        </div>
+    </div>
+</div>
+</div>
+<div style="text-align: center; margin-bottom: 35px; margin-top: 35px; font-weight: bold;">Follow Us</div>
+<div class="icons">
+    <a href="#">
+        <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+    <a href="#">
+        <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+    <a href="#">
+        <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+    <a href="#">
+        <ion-icon name="logo-skype"></ion-icon>
+    </a>
+    <a href="#">
+        <ion-icon name="logo-google"></ion-icon>
+    </a>
+</div>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</form>
+{% endblock %}

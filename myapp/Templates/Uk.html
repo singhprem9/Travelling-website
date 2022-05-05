@@ -1,0 +1,378 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+  img {
+    width: 480px;
+    height: 470px;
+    border: 2px solid;
+  }
+
+  .Card-title,
+  h1 {
+    align-items: center;
+    position: absolute;
+    margin-top: 165px;
+    margin-left: 275px;
+    color: white;
+  }
+
+  .Card-title:hover {
+    color: orange;
+  }
+
+  .text {
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 235px;
+    margin-left: 388px;
+  }
+
+  .text:hover {
+    color: orange;
+  }
+
+  .icons {
+    text-align: center;
+    margin-top: -35px;
+  }
+
+  .icons a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .icons ion-icon {
+    color: dimgray;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+
+  }
+
+  .icons ion-icon:hover {
+    color: #ff7200;
+  }
+</style>
+
+<div class="container-fluid mx-auto">
+  <div class="row ">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="static/Images//munuk.jpg" class="d-block w-100 img-thumbnail" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Munsyari</h5>
+            <p>Munsiyari is surrounded by rolling greenery, the closest being the Munsiyari bugyal.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static/Images//jim.jpg" class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div style=" font-size: 20px; color: black; font-weight: bold;">
+              <p>Jim Corebtt National Park</p>
+            </div>
+            <p>Jim Corbett National Park is a national park in India located in the Nainital district of Uttarakhand
+              state. </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static/Images//danceuk.jpg" class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Colors of Culture</h5>
+            <p>Chholiya is a dance form practised in the Kumaon division of Uttarakhand,</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+<div style="margin-right: 2px; margin-left: 28px; margin-top: 12px">
+  <div style="font-size: 22px; font-weight: bold;margin-bottom: 7px">Destination: Uttrakhand</div>
+  <div style="font-weight: lighter;">Uttarakhand formerly known as Uttaranchal is a state in the northern part of India.
+    It is often referred to as the "Devbhumi" (literally "Land of the Gods") due to its religious significance and
+    numerous Hindu temples and pilgrimage centres found throughout the state. Uttarakhand is known for the natural
+    environment of the Himalayas, the Bhabar and the Terai regions. It borders the Tibet Autonomous Region of China to
+    the north; the Sudurpashchim Province of Nepal to the east; the Indian states of Uttar Pradesh to the south and
+    Himachal Pradesh to the west and north-west. The state is divided into two divisions, Garhwal and Kumaon, with a
+    total of 13 districts. The winter capital of Uttarakhand is Dehradun, the largest city of the state, which is a rail
+    head. Bhararisain, a town in Chamoli district, is the summer capital of Uttarakhand.</div>
+</div>
+<!-- Adding Destinations -->
+<div
+  style="font-weight: bold; text-align: center;background-color:cadetblue; font-family: 'Times New Roman', Times; font-size: 50px; margin-left: 350px; border-radius: 32px; border: 2px solid dimgray; margin-right: 410px; margin-top: 25px; margin-bottom: 22px; align-items: center;">
+  Discover Uttrakhand</div>
+<div class="container-fluid mx-auto">
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col">
+      <div class="card">
+        <img src="static/Images//kedarnath3.jpg"
+          style="height: 310px; width: 500px; margin-left: 70px; background-color:cadetblue; border: 2px solid silver; border-radius: 22px"
+          class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title"></h5>
+          </div>
+          <div style=" font-size: 28px; font-weight: bold; "><a
+              style="color: black;font-style:Times New Roman; background-color:white; margin-left: 60px;"
+              href="Contact.html">Kedarnath</a></div>
+              <div style=" border-radius: 22px;margin-left:101px;margin-right:70px;text-align:center;margin-top: -3px;"><a href="/Book"><button type="submit" class="btn-warning active">Book Now</button></a></div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="static/Images//Badrinath.jpg"
+          style="height: 310px; width: 500px; margin-left: -10px;background-color:bisque; border: 2px solid silver; border-radius: 22px"
+          class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <div style=" font-size: 28px; font-weight: bold; "><a
+              style="color: black;font-style:Times New Roman; background-color:white; margin-left: -20px"
+              href="Book.html">Badrinath</a></div>
+              <div style=" border-radius: 22px;margin-left:101px;margin-right:240px;text-align:center;margin-top: -3px;"><a href="/Book"><button type="submit" class="btn-warning active">Book Now</button></a></div>
+
+
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: -110px;" class="col">
+      <div class="card">
+        <img src="static/Images//Baijnath.jpg"
+          style="height: 310px; width: 500px; margin-left: 70px; background-color:lightpink; border: 2px solid silver; border-radius: 22px"
+          class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <div style=" font-size: 28px; font-weight: bold; "><a
+              style="color: black;font-style:Times New Roman; background-color:white; margin-left: 60px"
+              href="Book.html">Baijnath</a></div>
+              <div style=" border-radius: 22px;margin-left:101px;margin-right: 70px;text-align:center;margin-top: -3px;"><a href="/Book"><button type="submit" class="btn-warning active">Book Now</button></a></div>
+
+
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: -110px;" class="col">
+      <div class="card">
+        <img src="static/Images//Haridwar3.jpg"
+          style="height: 310px; width: 500px;margin-left: -10px; background-color:darksalmon; border: 2px solid silver; border-radius: 22px"
+          class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <div style=" font-size: 28px; font-weight: bold; "><a
+              style="color: black;font-style:Times New Roman; background-color:white; margin-left: -20px;"
+              href="Book.html">Haridwar</a></div>
+              <div style=" border-radius: 22px;margin-left:101px;margin-right:240px;text-align:center;margin-top: -3px;"><a href="/Book"><button type="submit" class="btn-warning active">Book Now</button></a></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2 -->
+<div>
+  <div class="container-fluid mx-auto">
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col">
+        <div class="card">
+          <img src="static/Images//Rishikesh.jpg"
+            style="height: 320px;border: 2px solid silver; background-color:bisque; border-radius: 22px;margin-top: -80px"
+            class="card-img-top img-thumbnail" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rishikesh</h5>
+            <div style="margin-left:111px;margin-right:165px;text-align:center;margin-top: -4px;"><a href="/Book"><button type="submit" class="btn-warning active">Book Now</button></a></div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="static/Images//nainital.jpg"
+            style="height: 320px;border: 2px solid silver; background-color:cadetblue; border-radius: 22px;margin-top: -80px"
+            class="card-img-top img-thumbnail" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nainital</h5>
+            <div style="margin-left:111px;margin-right:165px;text-align:center;margin-top: -4px;"><a href="/Book"><button type="submit" class="btn-warning active">Book Now</button></a></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="static/Images//parkuk.jpg"
+            style="height: 320px;border: 2px solid silver; border-radius: 22px;background-color:bisque;margin-top: -80px"
+            class="card-img-top img-thumbnail" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jim Corbet National Park</h5>
+  
+            <div style="margin-left:111px; text-align: center;margin-right:145px; margin-top: -40px;"><a href="/Book"><button type="submit" class="btn-warning active">Book Now</button></a></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="static/Images//almora.jpg"
+            style="height: 320px;border: 2px solid silver; background-color:cadetblue; border-radius: 22px;margin-top: -175px"
+            class="card-img-top img-thumbnail" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Almora</h5>
+            <div style="margin-left:111px; margin-right:165px; text-align:center; margin-top: -4px;"><a href="/Book"><button type="submit" class="btn-warning active">Book Now</button></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="static/Images//Jageshwar.jpg"
+            style="height: 320px;border: 2px solid silver;background-color:bisque; border-radius: 22px;margin-top: -175px"
+            class="card-img-top img-thumbnail" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jageshwar Dham</h5>
+            <div style="margin-left:111px;margin-right:165px;text-align:center;margin-top: -4px;"><a href="/Book"><button type="submit" class="btn-warning active">Book Now</button></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="static/Images//pithoragarh.jpg"
+            style="height: 320px;border: 2px solid silver; background-color:lightpink; border-radius: 22px;margin-top: -175px"
+            class="card-img-top img-thumbnail" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pithoragarh</h5>
+            <div style="margin-left:111px; text-align: center;margin-right:145px; margin-top: -4px;"><a href="/Book"><button type="submit" class="btn-warning active">Book Now</button></a></div>
+
+            <div style="margin-top: 180px; margin-bottom: -120px; margin-left: -480px;  font-weight: bolder; background-color:darksalmon; border-radius: 20px; margin-right: 399px; font-size: 35px">WHY VISIT UTTRAKHAND</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Adding Visit -->
+  <div style="background-color:bisque; padding-top: -280px; padding-bottom: 34px;">
+    <div class="card mb-3" style="max-width: 540px;background-color:bisque;">
+      <div class="row g-0">
+        <div class="col-md-9">
+          <img src="static/Images//shiva.jpg" class="img-fluid rounded-start img-thumbnail"
+            style="margin-left: 50px; border: 2px solid gray;border-radius: 10px" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <div
+              style="font-weight: bold; font-size: 40px; margin-left: 450px; margin-right: -410px; margin-top: -400px; color: cadetblue;">
+              Land of Gods</div>
+            <div
+              style="font-size: 18px; font-style: Times New Roman; margin-left: 450px; margin-right: -480px; margin-top: -5px;">
+              called Devbhoomi(Land of the Gods),Uttrakhandis home to one of the highest Lord Shiva temples in the
+              world,
+              the Char Dham(four revered sites), the Panch Kedar(five temples dedicated to Lord Shiva),the Panch
+              Kedar(five temples dedicated to LordShiva),the Panch badri(five templed dedicated to Lord Vishnu) and the
+              Panch Prayag(five confluencies of the holy Ganga River.)</div>
+            <div style="margin-left: 50px; text-align: center; margin-right: 50px; margin-top: 50px;">
+              <button type="submit" class="btn-info active"><a href="Contact.html">View Details </a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="card mb-3" style="max-width: 550rem; background-color:bisque; align-items: end">
+      <div class="col">
+        <div class="col-md-0">
+          <img src="static/Images//ad.jpg"
+            style="margin-left: 740px; margin-right: 80px; border: 2px solid gray; border-radius: 10px"
+            class="img-fluid rounded-start img-thumbnail" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <div
+              style="font-weight: bold; font-size: 40px; margin-left: 300px; margin-right: -410px; margin-top: -270px; color:cadetblue;">
+              Adventure Hub</div>
+            <div
+              style="font-size: 18px; font-style: Times New Roman; margin-left: 150px; margin-right: 100px; margin-top: 3px;">
+              From white water Rafting to Paragliding, from bungee jumping to trekking and from skiing to mountain
+              biking-there is no dearth of adventure activities to be had and experienced in Uttrakhand.While Auli is
+              known as the skiing paradise of India,Rishikesh hosts India's highest bungee platform!</div>
+            <div style="margin-left: 350px; text-align: center;  margin-top: -10px;">
+              <button type="submit" class="btn-info active"><a href="Contact.html">View Details</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style="font-weight: bold; font-size: 22px; font-style: Times New Roman; margin-left: 30px; margin-top: 16px; margin-bottom: 25px;">
+    Why Us </div>
+</div>
+<div style="background-color:aliceblue" class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      We are a leading player in the travel & tourism industry across India, Magic Safari offers great offers, some of
+      the lowest travel packages, exclusive discounts, and a seamless online booking experience. Hotel and holiday
+      bookings through the desktop or mobile site are a delightfully customer-friendly experience, and with just a few
+      clicks you can complete your booking. With features like Instant Discounts, Calendar, MyRewards Program,
+      MyWallet, and many more, the overall booking experience with magic safari constantly adds value to its product
+      and continues to offer the best to its customers.
+    </div>
+    <div class="col-sm-4">
+      50 Most romantic and best Honeymoon Destinations In India Best Honeymoon Destinations In India Most romantic
+      Honeymoon Destinations
+    </div>
+    <div class="col-sm-4">
+      <div style="font-weight: bolder; font-size: 22px;">Reach us</div>
+      <div> Magic Safari</div> Travel Planners & Event Management Company <div>Faridabad</div>121002 <br>
+      <div style="font-weight: lighter; font-style:bold; font-size: 22px;">Prem Singh</div>
+    </div>
+  </div>
+</div>
+</div>
+<div style="text-align: center; margin-bottom: 35px; margin-top: 35px; font-weight: bold;">Follow Us</div>
+<div class="icons">
+  <a href="#">
+    <ion-icon name="logo-facebook"></ion-icon>
+  </a>
+  <a href="#">
+    <ion-icon name="logo-instagram"></ion-icon>
+  </a>
+  <a href="#">
+    <ion-icon name="logo-twitter"></ion-icon>
+  </a>
+  <a href="#">
+    <ion-icon name="logo-skype"></ion-icon>
+  </a>
+  <a href="#">
+    <ion-icon name="logo-google"></ion-icon>
+  </a>
+</div>
+</div>
+</form>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+{% endblock %}

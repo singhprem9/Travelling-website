@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    img{
+        width:480px;
+        height: 470px;
+        border: 2px solid;
+    }
+
+    .Card-title,h1{
+        align-items: center;
+        position: absolute;
+        font-style: normal;
+        margin-top: 195px;
+        margin-left: 385px;
+        color: white;
+    }
+    .Card-title:hover{
+        color: orange;
+    }
+    .text{
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        font-style: normal;
+        align-items: center;
+        margin-top: 245px;
+        margin-left: 495px;
+    }
+    .text:hover{
+        color: orange;
+    }
+
+
+    .icons{
+        text-align: center;
+        margin-top: -35px;
+      }
+      .icons a{
+        text-decoration: none;
+        color: #fff;
+      }
+      
+      .icons ion-icon{
+        color: dimgray;
+        font-size: 30px;
+        padding-left: 14px;
+        padding-top: 5px;
+        transition: 0.3s ease;
+        
+      }
+      
+      .icons ion-icon:hover{
+        color: #ff7200;
+      }
+</style>
+<div class="container-fluid">
+    <div class="card bg-dark text-white">
+        <img src="static/Images//Amrit1.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h3  class="Card-title">Amritsar Archives - Magic Safari</h3>
+            <a class="text" href="/">Home ⇒ Trips ⇒ Amritsar</a>
+            <p class="card-text"></p>
+        </div>
+    </div>
+</div>
+
+<!-- title -->
+<div style="font-size: 28px; font-weight: bold;margin-top: 80px; margin-left: 50px">Destination: Amritsar</div>
+<div style="font-size: 17px; font-weight: lighter; margin-left: 50px">Amritsar is a city in the northwestern Indian state of Punjab, 28 kilometers from the border with Pakistan. At the center of its walled old town, the gilded Golden Temple (Harmandir Sahib) is the holiest gurdwara (religious complex) of the Sikh religion. It’s at the end of a causeway, surrounded by the sacred Amrit Sarovar tank (lake), where pilgrims bathe.</div>
+
+<!--  -->
+<div style="margin-top: 150px">
+  <div class="card mb-1" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-9">
+        <img src="static/Images//gold.jpg"
+          style=" margin-left: 35px; margin-top: -70px; margin-bottom: -200px; height: 350px;border: 2px solid silver; border-radius: 20px"
+          class="card-img-top img-rounded" alt="...">
+      </div>
+      <div class="col-md-3">
+        <div class="card-body">
+          <div
+            style="font-weight: bold; font-size: 28px; margin-left: 45px; margin-right: -410px; margin-top: -80px; color: dimgray;">
+            Golden Triangle & Golden Temple</div>
+          <div style="margin-left: 40px; margin-right: -50px; text-align: center; font-weight: bold; font-size: 22px;">
+            ₹18,000.00</div>
+          <div style="text-align: end;">★★★★★</div>
+          <div style="margin-left: 45px; margin-right: -700px; position: relative; display: flex; font-size: 17px;">
+            Golden Triangle 05 Nights & 06 Days Make your Trip to the land of royalsone of its kind with Magic Safari.
+            Best Discounts on Golden Triangles, Rajasthan Family Tour, Honeymoon Vacation tours and weekend tour
+            Packages 2021 by booking with us. Walk through the ancient alleys; listen to stories of the age[...]</div>
+            <div style="margin-left: 180px; margin-top: 35px"><button class="cn"><a  href="/Book">Book Now</a></button></div>
+            
+        </div>
+          <div style="margin-left: 45px; text-align:center; margin-right: -35px; margin-top: -90px;"><button
+              type="submit" class="btn-info active"><a style="text-decoration: none;color:black" href="/adventure">View More</button></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- why us -->
+<div
+      style="font-weight: bold; font-size: 22px; font-style: Times New Roman; margin-left: 30px; margin-top: 16px; margin-bottom: 25px;">
+      Why Us </div>
+  </div>
+  <div style="background-color:aliceblue" class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        We are a leading player in the travel & tourism industry across India, Magic Safari offers great offers, some of
+        the lowest travel packages, exclusive discounts, and a seamless online booking experience. Hotel and holiday
+        bookings through the desktop or mobile site are a delightfully customer-friendly experience, and with just a few
+        clicks you can complete your booking. With features like Instant Discounts, Calendar, MyRewards Program,
+        MyWallet, and many more, the overall booking experience with magic safari constantly adds value to its product
+        and continues to offer the best to its customers.
+      </div>
+      <div class="col-sm-4">
+        50 Most romantic and best Honeymoon Destinations In India Best Honeymoon Destinations In India Most romantic Honeymoon Destinations
+      </div>
+      <div class="col-sm-4">
+        <div style="font-weight: bolder; font-size: 22px;">Reach us</div>
+        <div> Magic Safari</div> Travel Planners & Event Management Company <div>Faridabad</div>121002 <br>
+        <div style="font-weight: lighter; font-style:bold; font-size: 22px;">Prem Singh</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="text-align: center; margin-bottom: 35px; margin-top: 35px; font-weight: bold;">Follow Us</div>
+  <div class="icons">
+    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+</div>
+</div>
+</form>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+{% endblock %}
